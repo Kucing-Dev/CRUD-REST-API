@@ -109,5 +109,22 @@ Response:
 post deleted
 ```
 
+## ⚠️ Note
 
+- Data is not persistent (lost when the server goes down)
+- Suitable for:
+    - Learning REST APIs
+    - Rust backend practice
+    - LinkedIn / GitHub portfolio
 
+## 🚀 Tech Stack
+
+- Rust
+- Actix-Web
+- Serde
+- HashMap + Mutex
+
+## 📌 Author
+Khairunnisya Lubis Rust Backend Enthusiast
+
+⭐ If you like this project, feel free to give it a star!
