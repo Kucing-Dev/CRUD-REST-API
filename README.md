@@ -33,5 +33,81 @@ Data disimpan sementara di memory menggunakan `Mutex<HashMap<usize, Post>>`
 
 ### 1️⃣ Clone repository
 ```bash
-git clone https://github.com/USERNAME/CrudAPI.git
+git clone https://github.com/Kucing-Dev/CRUD-REST-API.git
 cd CrudAPI
+```
+
+## 2️⃣ run server
+```bash
+cargo run
+```
+server will run on:
+```bash
+http://127.0.0.1:8080
+```
+
+## 🧪 Usage Example (curl)
+### ➕ Create Post
+```bash
+curl -X POST http://127.0.0.1:8080/posts \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 1,
+  "title": "Hello",
+  "content": "Actix is awesome"
+}'
+```
+
+Response:
+```bash
+post created
+```
+
+### 📄 Get All Posts
+```bash
+curl http://127.0.0.1:8080/posts
+```
+
+Response:
+```bash
+[
+  {
+    "id": 1,
+    "title": "Hello",
+    "content": "Actix is awesome"
+  }
+]
+```
+### 🔍 Get Post by ID
+```bash
+curl http://127.0.0.1:8080/posts/1
+```
+
+### ✏️ Update Post
+```bash
+curl -X PUT http://127.0.0.1:8080/posts/1 \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 1,
+  "title": "Updated",
+  "content": "Edited content"
+}'
+```
+
+Response:
+```bash
+post updated
+```
+
+### 🗑️ Delete Post
+```bash
+curl -X DELETE http://127.0.0.1:8080/posts/1
+```
+
+Response:
+```bash
+post deleted
+```
+
+
+
