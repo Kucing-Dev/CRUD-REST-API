@@ -127,4 +127,4 @@ post deleted
 ## 📌 Author
 Khairunnisya Lubis Rust Backend Enthusiast
 
-⭐ If you like this project, feel free to give it a star!
+⭐ If you like this project, feel free to give it a star!. 
